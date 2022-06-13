@@ -5,7 +5,7 @@ const distPath = path.join(__dirname, 'dist');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/app.js',
   devServer: {
     static: {
       directory: distPath,
@@ -14,7 +14,7 @@ module.exports = {
     port: 9000,
   },
   output: {
-    filename: 'main.js',
+    filename: 'app.js',
     path: distPath,
   },
 
