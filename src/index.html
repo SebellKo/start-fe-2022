@@ -23,16 +23,18 @@
         <h3>학습</h3>
         <div class="btnwrap">
           <!-- 학습리스트 필터 -->
-          <div class="btn-group" role="group">
+          <div id = 'classBtns' class="btn-group" role="group">
             <!-- 선택된 버튼에만 active 속성 추가 -->
-            <button type="button" class="btn btn-outline-primary active">
+            <button type="button" id = 'classAll' class="btn btn-outline-primary active">
               모두
             </button>
-            <button type="button" class="btn btn-outline-primary">
+            <button type="button" id = 'classHelp' class="btn btn-outline-primary">
               도움링크
             </button>
-            <button type="button" class="btn btn-outline-primary">git</button>
-            <button type="button" class="btn btn-outline-primary">
+            <button type="button" id = 'classGit' class="btn btn-outline-primary">
+              git
+            </button>
+            <button type="button" id = 'classRecent' class="btn btn-outline-primary">
               최신순
             </button>
           </div>
@@ -40,9 +42,9 @@
       </div>
 
       <!-- loading중에 표시합니다. -->
-      <!-- <div class="spinner-border" role="status">
+      <div id ='classLoading' class="spinner-border" role="status">
         <span class="visually-hidden">Loading...</span>
-      </div> -->
+      </div>
       <table class="table">
         <thead>
           <tr>
@@ -59,7 +61,7 @@
             <th scope="col" width="100">실습</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="class">
           <!-- <tr>
             <th scope="row">1</th>
             <td>수업소개</td>
@@ -133,19 +135,19 @@
         <h3>퀴즈</h3>
         <!-- 퀴즈리스트 필터 -->
         <div class="btnwrap">
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-outline-primary active">
+          <div id = 'quizBtns' class="btn-group" role="group">
+            <button id = 'quizAll' type="button" class="btn btn-outline-primary active">
               모두
             </button>
-            <button type="button" class="btn btn-outline-primary">git</button>
+            <button id = 'quizGit' type="button" class="btn btn-outline-primary">git</button>
           </div>
         </div>
       </div>
 
       <!-- loading중에 표시합니다. -->
-      <!-- <div class="spinner-border" role="status">
+      <div id='quizLoading' class="spinner-border" role="status">
         <span class="visually-hidden">Loading...</span>
-      </div> -->
+      </div>
       <table class="table">
         <thead>
           <tr>
@@ -159,7 +161,7 @@
             <th scope="col" width="100">실습</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="quiz">
           <!-- <tr>
             <td>이미지슬라이드</td>
             <td>

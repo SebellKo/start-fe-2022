@@ -13,3 +13,7 @@ a.badge {
   display: flex;
   justify-content: space-between;
 }
+
+#classLoading, #quizLoading {
+  display: none;
+}
