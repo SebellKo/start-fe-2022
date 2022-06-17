@@ -1,5 +1,6 @@
 import {fetchData} from './fetch.js';
 
+
 const classAllBtn = document.querySelector('#classAll');
 const classHelpBtn = document.querySelector('#classHelp');
 const classGitBtn = document.querySelector('#classGit');
@@ -15,8 +16,6 @@ const quizLoading = document.querySelector('#quizLoading');
 
 const classBtnChildren = [...classBtns.children];
 const quizBtnChildren = [...quizBtns.children];
-// const classData = fetchData('./class.json');
-// const quizData = fetchData('./quiz.json');
 
 let isClass = false;
 let isQuiz = false;
@@ -42,35 +41,34 @@ quizBtnChildren.forEach((item) => {
   });
 })
 
-classAllBtn.addEventListener('click', (event) => {
+classAllBtn.addEventListener('click', () => {
   classCategory = 'all';
   isClass = true;
   isQuiz = false;
   loading(classLoading);
   fetchData('./class.json', classCategory, quizCategory, isClass, isQuiz, classWrapper);
 });
-classHelpBtn.addEventListener('click', (event) => {
+classHelpBtn.addEventListener('click', () => {
   classCategory = 'help';
   isClass = true;
   isQuiz = false;
   loading(classLoading);
   fetchData('./class.json', classCategory, quizCategory, isClass, isQuiz, classWrapper);
 });
-classGitBtn.addEventListener('click', (event) => {
+classGitBtn.addEventListener('click', () => {
   classCategory = 'git';
   isClass = true;
   isQuiz = false;
   loading(classLoading);
   fetchData('./class.json', classCategory, quizCategory, isClass, isQuiz, classWrapper);
 });
-classRecentBtn.addEventListener('click', (event) => {
+classRecentBtn.addEventListener('click', () => {
   classCategory = 'recent';
   isClass = true;
   isQuiz = false;
   loading(classLoading);
   fetchData('./class.json', classCategory, quizCategory, isClass, isQuiz, classWrapper);
 });
-
 
 quizAllBtn.addEventListener('click', () => {
   quizCategory = 'all';
