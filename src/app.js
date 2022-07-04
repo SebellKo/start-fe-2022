@@ -1,5 +1,5 @@
 import {fetchData} from './fetch.js';
-
+import './app.css';
 
 const classAllBtn = document.querySelector('#classAll');
 const classHelpBtn = document.querySelector('#classHelp');
@@ -46,7 +46,7 @@ classAllBtn.addEventListener('click', () => {
   isClass = true;
   isQuiz = false;
   loading(classLoading);
-  fetchData('./class.json', classCategory, quizCategory, isClass, isQuiz, classWrapper);
+  fetchData('class.json', classCategory, quizCategory, isClass, isQuiz, classWrapper);
 });
 classHelpBtn.addEventListener('click', () => {
   classCategory = 'help';

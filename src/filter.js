@@ -21,6 +21,7 @@ const filterClass = (data, classCategory) => {
     let filteredData = [];
     for (let i = 0; i < data.length; i++) {
       if (quizCategory == 'git' && !(data[i].gitUrl)) {
+        console.log(data[i]);
         continue;
       }
       else {
