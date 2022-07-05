@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack",
     "start": "webpack serve --open",
     "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebellKo/start-fe-2022.git"
   },
   "keywords": [],
   "author": "",
