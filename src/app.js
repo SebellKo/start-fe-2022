@@ -41,6 +41,20 @@ quizBtnChildren.forEach((item) => {
   });
 })
 
+window.addEventListener('load', () => {
+  classCategory = 'all';
+  isClass = true;
+  isQuiz = false;
+  loading(classLoading);
+  fetchData('class.json', classCategory, quizCategory, isClass, isQuiz, classWrapper);
+
+  quizCategory = 'all';
+  isQuiz = true;
+  isClass = false;
+  loading(quizLoading);
+  fetchData('./quiz.json', classCategory, quizCategory, isClass, isQuiz, classWrapper, quizWrapper);
+})
+
 classAllBtn.addEventListener('click', () => {
   classCategory = 'all';
   isClass = true;
